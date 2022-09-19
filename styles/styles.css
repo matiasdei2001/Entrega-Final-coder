@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-color: rgb(0, 0, 0);
+    height: 146px;
+    justify-content: center;
+}
+body{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: black;
+}
+
+.header-top{
+    background-color: rgb(1, 1, 1);
+    width: 100%;
+    height: 125px;
+    border-bottom: solid 1px goldenrod;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+.logo{
+    background-color: antiquewhite;
+    height: 75px;
+    width: 75px;
+}
+.navegador{
+    width: 100%;
+}
+.contenedor-links{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding-left: 10px;
+    
+    font-family: 'Crimson Pro', serif;
+}
+.link-1 a{
+    text-decoration: none;
+    list-style: none;
+    color: azure;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.link-2 a{
+    text-decoration: none;
+    list-style: none;
+    color: azure;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.link-3 a{
+    text-decoration: none;
+    list-style: none;
+    color: azure;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.link-4 a{
+    text-decoration: none;
+    list-style: none;
+    color: azure;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.link-1 a:hover{
+    color: goldenrod;
+}
+.link-2 a:hover{
+    color: goldenrod;
+}
+.link-3 a:hover{
+    color: goldenrod;
+}
+.link-4 a:hover{
+    color: goldenrod;
+}
+
+.cuerpo{
+    background-color: rgb(236, 236, 236);
+    width: 95%;
+    height: 100vh;
+    position: absolute;
+    left: 18px;
+}
+.keyboard-1, .keyboard-2, .keyboard-3{
+    display: none;
+}
+
+@media(min-width:600px){
+
+    header{
+        background-color: rgb(0, 0, 0);
+        height: 146px;
+        justify-content: center;
+    }
+    body{
+        height: 100%;
+        width: 100%;
+        position: relative;
+        background-color: black;
+    }
+    
+    .header-top{
+        background-color: rgb(1, 1, 1);
+        width: 100%;
+        height: 125px;
+        border-bottom: solid 1px goldenrod;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .logo{
+        background-color: antiquewhite;
+        height: 75px;
+        width: 75px;
+    }
+    .navegador{
+        width: 100%;
+    }
+    .contenedor-links{
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        padding-left: 10px;
+        
+        font-family: 'Crimson Pro', serif;
+    }
+    .link-1 a{
+        text-decoration: none;
+        list-style: none;
+        color: azure;
+        font-size: 20px;
+        transition: 0.5s;
+    }
+    .link-2 a{
+        text-decoration: none;
+        list-style: none;
+        color: azure;
+        font-size: 20px;
+        transition: 0.5s;
+    }
+    .link-3 a{
+        text-decoration: none;
+        list-style: none;
+        color: azure;
+        font-size: 20px;
+        transition: 0.5s;
+    }
+    .link-4 a{
+        text-decoration: none;
+        list-style: none;
+        color: azure;
+        font-size: 20px;
+        transition: 0.5s;
+    }
+    .link-1 a:hover{
+        color: goldenrod;
+    }
+    .link-2 a:hover{
+        color: goldenrod;
+    }
+    .link-3 a:hover{
+        color: goldenrod;
+    }
+    .link-4 a:hover{
+        color: goldenrod;
+    }
+    
+    .cuerpo{
+        background-color: rgb(236, 236, 236);
+        width: 95%;
+        height: 100vh;
+        position: absolute;
+        left: 18px;
+    }
+    .keyboard-1, .keyboard-2, .keyboard-3{
+        display: none;
+    }
+}
+
+
+@media(min-width:800px){
+
+    header{
+        background-color: rgb(0, 0, 0);
+        height: 146px;
+        justify-content: center;
+    }
+    body{
+        height: 100%;
+        width: 100%;
+        position: relative;
+        background-color: black;
+    }
+    
+    .header-top{
+        background-color: rgb(1, 1, 1);
+        width: 100%;
+        height: 125px;
+        border-bottom: solid 1px goldenrod;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .logo{
+        background-color: antiquewhite;
+        height: 100px;
+        width: 100px;
+    }
+    .navegador{
+        width: 75%;
+    }
+    .contenedor-links{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        justify-content: space-evenly;
+        font-family: 'Crimson Pro', serif;
+    }
+    .link-1 a{
+        text-decoration: none;
+        list-style: none;
+        color: azure;
+        font-size: 20px;
+        transition: 0.5s;
+    }
+    .link-2 a{
+        text-decoration: none;
+        list-style: none;
+        color: azure;
+        font-size: 20px;
+        transition: 0.5s;
+    }
+    .link-3 a{
+        text-decoration: none;
+        list-style: none;
+        color: azure;
+        font-size: 20px;
+        transition: 0.5s;
+    }
+    .link-4 a{
+        text-decoration: none;
+        list-style: none;
+        color: azure;
+        font-size: 20px;
+        transition: 0.5s;
+    }
+    .link-1 a:hover{
+        color: goldenrod;
+    }
+    .link-2 a:hover{
+        color: goldenrod;
+    }
+    .link-3 a:hover{
+        color: goldenrod;
+    }
+    .link-4 a:hover{
+        color: goldenrod;
+    }
+    
+    .cuerpo{
+        background-color: rgb(236, 236, 236);
+        width: 95%;
+        height: 100vh;
+        position: absolute;
+        left: 15px;
+    }
+    .keyboard-1, .keyboard-2, .keyboard-3{
+        display: none;
+    }
+
+}
+
+@media(min-width:1042px) {
+
+    header{
+        background-color: rgb(0, 0, 0);
+        height: 225px;
+    }
+    body{
+        height: 100%;
+        width: 100%;
+        position: relative;
+        background-color: black;
+    }
+    .keyboard-position{
+        margin-top: 20px;
+        width: 100%;
+        height: 75px;
+        display: flex;
+        justify-content: center;
+    }
+    .key-C, .key-D,  .key-E, .key-F,  .key-G,  .key-A,  .key-B{
+        background-image: linear-gradient(to top, white, rgb(220, 220, 220));
+        width: 50px;
+        height: 70px;
+        border-top: solid 1.7px black;
+        border-bottom: solid 1.7px black;
+        border-left: solid 0.95px black;
+        border-right: solid 0.95px black;
+    }
+    .key-Cs, .key-Ds,.key-Fs,.key-Gs,.key-As{
+        background-image: linear-gradient(black, rgb(42, 42, 42));
+        width: 20px;
+        height: 40px;
+    }
+    .key-C{
+        grid-area: C ;
+    }
+    .key-C:hover{
+        background-image: linear-gradient(white, rgb(202, 202, 202));
+    }
+    .key-C:active{
+        background-image: linear-gradient(white, rgb(92, 92, 92));
+    }
+    .key-Cs{
+        grid-area: Cs ;
+    }
+    .key-Cs:active{
+        background-image: linear-gradient(to top, black, rgb(85, 85, 85));
+    }
+    .key-D{
+        grid-area:D ;
+    }
+    .key-D:hover{
+        background-image: linear-gradient(white, rgb(202, 202, 202));
+    }
+    .key-D:active{
+        background-image: linear-gradient(white, rgb(92, 92, 92));
+    }
+    .key-Ds{
+        grid-area:Ds ;
+    }
+    .key-Ds:active{
+        background-image: linear-gradient(to top, black, rgb(85, 85, 85));
+    }
+    .key-E{
+        grid-area:E ;
+    }
+    .key-E:hover{
+        background-image: linear-gradient(white, rgb(202, 202, 202));
+    }
+    .key-E:active{
+        background-image: linear-gradient(white, rgb(92, 92, 92));
+    }
+    .key-F{
+        grid-area:F ;
+    }
+    .key-F:hover{
+        background-image: linear-gradient(white, rgb(202, 202, 202));
+    }
+    .key-F:active{
+        background-image: linear-gradient(white, rgb(92, 92, 92));
+    }
+    .key-Fs{
+        grid-area:Fs ;
+    }
+    .key-Fs:active{
+        background-image: linear-gradient(to top, black, rgb(85, 85, 85));
+    }
+    .key-G{
+        grid-area:G ;
+    }
+    .key-G:hover{
+        background-image: linear-gradient(white, rgb(202, 202, 202));
+    }
+    .key-G:active{
+        background-image: linear-gradient(white, rgb(92, 92, 92));
+    }
+    .key-Gs{
+        grid-area:Gs ;
+    }
+    .key-Gs:active{
+        background-image: linear-gradient(to top, black, rgb(85, 85, 85));
+    }
+    .key-A{
+        grid-area:A ;
+    }
+    .key-A:hover{
+        background-image: linear-gradient(white, rgb(202, 202, 202));
+    }
+    .key-A:active{
+        background-image: linear-gradient(white, rgb(92, 92, 92));
+    }
+    .key-As{
+        grid-area:As ;
+    }
+    .key-As:active{
+        background-image: linear-gradient(to top, black, rgb(85, 85, 85));
+    }
+    .key-B:hover{
+        background-image: linear-gradient(white, rgb(202, 202, 202));
+    }
+    .key-B:active{
+        background-image: linear-gradient(white, rgb(92, 92, 92));
+    }
+    
+    .header-top{
+        background-color: rgb(1, 1, 1);
+        width: 100%;
+        height: 125px;
+        border-bottom: solid 1px goldenrod;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .logo{
+        background-color: antiquewhite;
+        height: 100px;
+        width: 100px;
+    }
+    .navegador{
+        width: 75%;
+    }
+    .contenedor-links{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        justify-content: space-evenly;
+        font-family: 'Crimson Pro', serif;
+    }
+    .link-1 a{
+        text-decoration: none;
+        list-style: none;
+        color: azure;
+        font-size: 25px;
+        transition: 0.5s;
+    }
+    .link-2 a{
+        text-decoration: none;
+        list-style: none;
+        color: azure;
+        font-size: 25px;
+        transition: 0.5s;
+    }
+    .link-3 a{
+        text-decoration: none;
+        list-style: none;
+        color: azure;
+        font-size: 25px;
+        transition: 0.5s;
+    }
+    .link-4 a{
+        text-decoration: none;
+        list-style: none;
+        color: azure;
+        font-size: 25px;
+        transition: 0.5s;
+    }
+    .link-1 a:hover{
+        color: goldenrod;
+    }
+    .link-2 a:hover{
+        color: goldenrod;
+    }
+    .link-3 a:hover{
+        color: goldenrod;
+    }
+    .link-4 a:hover{
+        color: goldenrod;
+    }
+    
+    .cuerpo{
+        background-color: rgb(236, 236, 236);
+        width: 95%;
+        height: 100vh;
+        position: absolute;
+        left: 37.98px;
+    }
+    .keyboard-1, .keyboard-2, .keyboard-3 {
+    background-color: rgb(234, 234, 234);
+    border-bottom: solid 1.7px black;
+    display: grid;
+    grid-template-columns: 50px 20px 50px 20px 50px 50px 20px 50px 20px 50px 20px;
+    grid-template-rows: 75px;
+    grid-template-areas: 
+    "C Cs D Ds E F Fs G Gs A As B"
+    ;
+}
+}
