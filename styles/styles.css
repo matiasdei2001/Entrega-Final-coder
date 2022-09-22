@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
 }
-header{
+.header-index{
     background-color: rgb(0, 0, 0);
     height: 250px;
     justify-content: center;
@@ -11,8 +11,7 @@ header{
 body{
     height: 100%;
     width: 100%;
-    position: relative;
-    background-color: black;
+    background-color: rgb(234, 229, 221);
 }
 
 .header-top{
@@ -88,28 +87,83 @@ body{
 .link-4 a:hover{
     color: goldenrod;
 }
-
-.cuerpo{
-    background-color: rgb(236, 236, 236);
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-}
 .keyboard-1, .keyboard-2, .keyboard-3{
     display: none;
 }
+.section1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 20px 0 20px;
+}
+.titulo-1{
+    font-size: 20px;
+    font-family: 'Crimson Pro', serif;
+    text-decoration: underline goldenrod;
+}
 .contenedor-carrusel{
-    height: 400px;
-    width: 900px;
-    margin-top: 60px;
+    max-width: 900px;
+    max-height: 400px;
+    border: solid 3.5px goldenrod;
+}
+.footer-conteiner{
+    display: grid;
+    grid-template-columns: 6.55% repeat(3, 29%) 6.55%;
+    grid-template-rows: 20%;
+    grid-template-areas:
+    ". sect1 sect2 sect3 ." 
+    ;
+    margin-top: 20px;
+    background-color: goldenrod;
+}
+.links-ul{
+    list-style-type: none;
+    justify-self: center;
+    padding-left: 0;
+}
+.footer-cont-1{
+    grid-area: sect1;
+    justify-self: center;
+    height: 100%;
+}
+.footer-texto-1{
+    font-size: 15px;
+    font-family: 'Crimson Pro', serif;
+}
+.footer-cont-2{
+    grid-area: sect2;
+    justify-self: center;
+    height: 100%;
+}
+.footer-texto-2{
+    font-size: 15px;
+    font-family: 'Crimson Pro', serif;
+}
+.footer-cont-3{
+    grid-area: sect3;
+    justify-self: center;
+    height: 100%;
+}
+.footer-texto-3{
+    font-size: 15px;
+    font-family: 'Crimson Pro', serif;
+}
+.link-1-foot a, .link-2-foot a, .link-3-foot a, .link-4-foot a{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    font-family: 'Crimson Pro', serif;
+    font-size: 10px;
+}
+.link-1-foot, .link-2-foot, .link-3-foot, .link-4-foot{
+    display: flex;
+    flex-direction: column;
     
 }
 
 @media(min-width:600px){
 
-    header{
+    .header-index{
         background-color: rgb(0, 0, 0);
         height: 146px;
         justify-content: center;
@@ -118,7 +172,7 @@ body{
         height: 100%;
         width: 100%;
         position: relative;
-        background-color: black;
+        background-color: rgb(234, 229, 221);
     }
     
     .header-top{
@@ -191,39 +245,87 @@ body{
     .link-4 a:hover{
         color: goldenrod;
     }
-    
-    .cuerpo{
-        background-color: rgb(236, 236, 236);
-        width: 100%;
-        height: 100vh;
-        position: absolute;
-        display: flex;
-        justify-content: center;
-    }
     .keyboard-1, .keyboard-2, .keyboard-3{
         display: none;
     }
+    .section1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 20px 0 20px;
+    }
+    .titulo-1{
+        font-size: 25px;
+        font-family: 'Crimson Pro', serif;
+        text-decoration: underline goldenrod;
+    }
     .contenedor-carrusel{
-        height: 400px;
-        width: 900px;
-        margin-top: 60px;
-        
+        max-width: 900px;
+        max-height: 400px;
+        border: solid 3.5px goldenrod;
+    }
+
+    .footer-conteiner{
+        display: grid;
+        grid-template-columns: 6.55% repeat(3, 29%) 6.55%;
+        grid-template-rows: 20%;
+        grid-template-areas:
+        ". sect1 sect2 sect3 ." 
+        ;
+        margin-top: 20px;
+        background-color: goldenrod;
+    }
+    .links-ul{
+        list-style-type: none;
+        justify-self: center;
+        padding-left: 0;
+    }
+    .footer-cont-1{
+        grid-area: sect1;
+        justify-self: center;
+        height: 100%;
+    }
+    .footer-texto-1{
+        font-size: 25px;
+        font-family: 'Crimson Pro', serif;
+    }
+    .footer-cont-2{
+        grid-area: sect2;
+        justify-self: center;
+        height: 100%;
+    }
+    .footer-texto-2{
+        font-size: 25px;
+        font-family: 'Crimson Pro', serif;
+    }
+    .footer-cont-3{
+        grid-area: sect3;
+        justify-self: center;
+        height: 100%;
+    }
+    .footer-texto-3{
+        font-size: 25px;
+        font-family: 'Crimson Pro', serif;
+    }
+    .link-1-foot a, .link-2-foot a, .link-3-foot a, .link-4-foot a{
+        list-style-type: none;
+        text-decoration: none;
+        color: black;
+        font-family: 'Crimson Pro', serif;
+        font-size: 20px;
     }
 }
 
 
 @media(min-width:800px){
 
-    header{
+    .header-index{
         background-color: rgb(0, 0, 0);
         height: 146px;
         justify-content: center;
     }
     body{
-        height: 100%;
-        width: 100%;
-        position: relative;
-        background-color: black;
+        background-color: rgb(234, 229, 221);
     }
     
     .header-top{
@@ -294,38 +396,84 @@ body{
     .link-4 a:hover{
         color: goldenrod;
     }
-    
-    .cuerpo{
-        background-color: rgb(236, 236, 236);
-        width: 100%;
-        height: 100vh;
-        position: absolute;
-        display: flex;
-        justify-content: center;
-    }
     .keyboard-1, .keyboard-2, .keyboard-3{
         display: none;
     }
-    .contenedor-carrusel{
-        height: 400px;
-        width: 900px;
-        margin-top: 60px;
-        
+    .section1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 20px 0 20px;
     }
-
+    .titulo-1{
+        font-size: 30px;
+        font-family: 'Crimson Pro', serif;
+        text-decoration: underline goldenrod;
+    }
+    .contenedor-carrusel{
+        max-width: 900px;
+        max-height: 400px;
+        border: solid 3.5px goldenrod;
+    }
+    .footer-conteiner{
+        display: grid;
+        grid-template-columns: 6.55% repeat(3, 29%) 6.55%;
+        grid-template-rows: 20%;
+        grid-template-areas:
+        ". sect1 sect2 sect3 ." 
+        ;
+        margin-top: 20px;
+        background-color: goldenrod;
+    }
+    .links-ul{
+        list-style-type: none;
+        justify-self: center;
+        padding-left: 0;
+    }
+    .footer-cont-1{
+        grid-area: sect1;
+        justify-self: center;
+        height: 100%;
+    }
+    .footer-texto-1{
+        font-size: 25px;
+        font-family: 'Crimson Pro', serif;
+    }
+    .footer-cont-2{
+        grid-area: sect2;
+        justify-self: center;
+        height: 100%;
+    }
+    .footer-texto-2{
+        font-size: 25px;
+        font-family: 'Crimson Pro', serif;
+    }
+    .footer-cont-3{
+        grid-area: sect3;
+        justify-self: center;
+        height: 100%;
+    }
+    .footer-texto-3{
+        font-size: 25px;
+        font-family: 'Crimson Pro', serif;
+    }
+    .link-1-foot a, .link-2-foot a, .link-3-foot a, .link-4-foot a{
+        list-style-type: none;
+        text-decoration: none;
+        color: black;
+        font-family: 'Crimson Pro', serif;
+        font-size: 20px;
+    }
 }
 
 @media(min-width:1042px) {
 
-    header{
+    .header-index{
         background-color: rgb(0, 0, 0);
         height: 225px;
     }
     body{
-        height: 100%;
-        width: 100%;
-        position: relative;
-        background-color: black;
+        background-color: rgb(234, 229, 221);
     }
     .keyboard-position{
         margin-top: 20px;
@@ -466,6 +614,7 @@ body{
         justify-content: space-evenly;
         font-family: 'Crimson Pro', serif;
         list-style: none;
+        margin: 0;
     }
     .link-1 a{
         text-decoration: none;
@@ -507,17 +656,6 @@ body{
     .link-4 a:hover{
         color: goldenrod;
     }
-    
-    .cuerpo{
-        background-color: rgb(239, 230, 215);
-        width: 100%;
-        height: 400vh;
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-    }
     .keyboard-1, .keyboard-2, .keyboard-3 {
     background-color: rgb(234, 234, 234);
     border-bottom: solid 1.7px black;
@@ -528,14 +666,312 @@ body{
     "C Cs D Ds E F Fs G Gs A As B"
     ;
 }
-.contenedor-carrusel{
-    height: 400px;
-    width: 900px;
-    margin-top: 60px;
-    
+.section1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 20px 0 20px;
 }
-.contenedor-titulo-1{
-    margin-top: 30px;
+.titulo-1{
+    font-size: 40px;
+    font-family: 'Crimson Pro', serif;
+    text-decoration: underline goldenrod;
+}
+.contenedor-carrusel{
+    max-width: 900px;
+    max-height: 400px;
+    border: solid 3.5px goldenrod;
+}
+.footer-conteiner{
+    display: grid;
+    grid-template-columns: 6.55% repeat(3, 29%) 6.55%;
+    grid-template-rows: 20%;
+    grid-template-areas:
+    ". sect1 sect2 sect3 ." 
+    ;
+    margin-top: 20px;
+    background-color: goldenrod;
+}
+.links-ul{
+    list-style-type: none;
+    justify-self: center;
+    padding-left: 0;
+}
+.footer-cont-1{
+    grid-area: sect1;
+    justify-self: center;
+    height: 100%;
+}
+.footer-texto-1{
+    font-size: 25px;
     font-family: 'Crimson Pro', serif;
 }
+.footer-cont-2{
+    grid-area: sect2;
+    justify-self: center;
+    height: 100%;
 }
+.footer-texto-2{
+    font-size: 25px;
+    font-family: 'Crimson Pro', serif;
+}
+.footer-cont-3{
+    grid-area: sect3;
+    justify-self: center;
+    height: 100%;
+}
+.footer-texto-3{
+    font-size: 25px;
+    font-family: 'Crimson Pro', serif;
+}
+.link-1-foot a, .link-2-foot a, .link-3-foot a, .link-4-foot a{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    font-family: 'Crimson Pro', serif;
+    font-size: 20px;
+}
+}
+/* CSS Para instrumentos de cuerda*/
+@media(min-width:300px){ 
+    .productos-cuerda{
+        display: grid;
+        margin-top: 70px;
+        grid-template-columns: 9% 21.45% 9% 21.45% 9% 21.45% 9%;
+        grid-template-rows: 47% 47%;
+        grid-template-areas:
+        ". prod1c . prod2c . prod3c ."
+        ". prod4c . prod5c . prod6c ."
+        ;
+        row-gap: 50px;
+        height: 80%;
+        max-height: 80%;
+    }
+    .header-instrumentos-de-cuerda{
+        height: 248px;
+        background-color: black
+    }
+    .titulo-cuerda{
+        height: 100px;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        border-bottom:dashed black 2px ;
+    }
+    .titulo-contenedor{
+        font-family: 'Crimson Pro', serif;
+        color: black;
+    }
+    .producto-1-cuerda{
+        grid-area: prod1c;
+    }
+    .producto-2-cuerda{
+        grid-area: prod2c;
+    }
+    .producto-3-cuerda{
+        grid-area: prod3c;
+    }
+    .producto-4-cuerda{
+        grid-area: prod4c;
+    }
+    .producto-5-cuerda{
+        grid-area: prod5c;
+    }
+    .producto-6-cuerda{
+        grid-area: prod6c;
+    }
+    .imagen-guitarra{
+        width: 100%;
+        height: 100%;
+        border-bottom: solid black 2px;
+    }
+    .producto-1-cuerda, .producto-2-cuerda, .producto-3-cuerda, .producto-4-cuerda, .producto-5-cuerda, .producto-6-cuerda{
+        height: 100%;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Crimson Pro', serif;
+        color: black;
+        border: solid 2px black;
+    }
+    .footer-conteiner-cuerda{
+        display: grid;
+        grid-template-columns: 6.55% repeat(3, 29%) 6.55%;
+        grid-template-rows: 20%;
+        grid-template-areas:
+        ". sect1 sect2 sect3 ." 
+        ;
+        margin-top: 40px;
+        background-color: goldenrod;
+    }
+    .Titulo-guitarra{
+        font-size: 15px;
+    }
+}
+
+@media(min-width:600px){
+
+     .productos-cuerda{
+        display: grid;
+        margin-top: 70px;
+        grid-template-columns: 9% 21.45% 9% 21.45% 9% 21.45% 9%;
+        grid-template-rows: 47% 47%;
+        grid-template-areas:
+        ". prod1c . prod2c . prod3c ."
+        ". prod4c . prod5c . prod6c ."
+        ;
+        row-gap: 50px;
+        height: 80%;
+        max-height: 80%;
+    }
+    .header-instrumentos-de-cuerda{
+        height: 146px;
+        background-color: black
+    }
+    .titulo-cuerda{
+        height: 100px;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        border-bottom:dashed black 2px ;
+    }
+    .titulo-contenedor{
+        font-family: 'Crimson Pro', serif;
+        color: black;
+    }
+    .producto-1-cuerda{
+        grid-area: prod1c;
+    }
+    .producto-2-cuerda{
+        grid-area: prod2c;
+    }
+    .producto-3-cuerda{
+        grid-area: prod3c;
+    }
+    .producto-4-cuerda{
+        grid-area: prod4c;
+    }
+    .producto-5-cuerda{
+        grid-area: prod5c;
+    }
+    .producto-6-cuerda{
+        grid-area: prod6c;
+    }
+    .imagen-guitarra{
+        width: 100%;
+        height: 100%;
+        border-bottom: solid black 2px;
+    }
+    .producto-1-cuerda, .producto-2-cuerda, .producto-3-cuerda, .producto-4-cuerda, .producto-5-cuerda, .producto-6-cuerda{
+        height: 100%;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Crimson Pro', serif;
+        color: black;
+        border: solid 2px black;
+    }
+    .footer-conteiner-cuerda{
+        display: grid;
+        grid-template-columns: 6.55% repeat(3, 29%) 6.55%;
+        grid-template-rows: 20%;
+        grid-template-areas:
+        ". sect1 sect2 sect3 ." 
+        ;
+        margin-top: 40px;
+        background-color: goldenrod;
+    }
+    .Titulo-guitarra{
+        font-size: 20px;
+    }
+}
+
+@media(min-width:1042px){
+    .header-instrumentos-de-cuerda{
+    height: 146px;
+    background-color: black
+}
+.titulo-cuerda{
+    height: 100px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    border-bottom:dashed black 2px ;
+}
+.titulo-contenedor{
+    font-family: 'Crimson Pro', serif;
+    color: black;
+}
+.productos-cuerda{
+    display: grid;
+    margin-top: 70px;
+    grid-template-columns: 9% 21.45% 9% 21.45% 9% 21.45% 9%;
+    grid-template-rows: 47% 47%;
+    grid-template-areas:
+    ". prod1c . prod2c . prod3c ."
+    ". prod4c . prod5c . prod6c ."
+    ;
+    row-gap: 50px;
+    height: 80%;
+    max-height: 80%;
+}
+.producto-1-cuerda{
+    grid-area: prod1c;
+}
+.producto-2-cuerda{
+    grid-area: prod2c;
+}
+.producto-3-cuerda{
+    grid-area: prod3c;
+}
+.producto-4-cuerda{
+    grid-area: prod4c;
+}
+.producto-5-cuerda{
+    grid-area: prod5c;
+}
+.producto-6-cuerda{
+    grid-area: prod6c;
+}
+.imagen-guitarra{
+    width: 100%;
+    height: 100%;
+    border-bottom: solid black 2px;
+}
+.producto-1-cuerda, .producto-2-cuerda, .producto-3-cuerda, .producto-4-cuerda, .producto-5-cuerda, .producto-6-cuerda{
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Crimson Pro', serif;
+    color: black;
+    border: solid 2px black;
+}
+.footer-conteiner-cuerda{
+    display: grid;
+    grid-template-columns: 6.55% repeat(3, 29%) 6.55%;
+    grid-template-rows: 20%;
+    grid-template-areas:
+    ". sect1 sect2 sect3 ." 
+    ;
+    margin-top: 40px;
+    background-color: goldenrod;
+}
+.Titulo-guitarra{
+    font-size: 30px;
+}
+}
+
+
