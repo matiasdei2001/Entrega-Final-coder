@@ -1,0 +1,248 @@
+/* CSS Para instrumentos de teclado*/
+@media(min-width:300px){ 
+    .productos-teclado{
+        display: grid;
+        justify-content: center;
+        margin-top: 50px;
+        grid-template-columns: 9% 40% 9% 40% 9%;
+        grid-template-rows: 30% 30% 30%;
+        grid-template-areas:
+        ". prod1c . prod2c ."
+        ". prod3c . prod4c ."
+        ". prod5c . prod6c ."
+        ;
+        row-gap: 50px;
+        height: 80%;
+        max-height: 80%;
+    }
+    .header-instrumentos-de-teclado{
+        background-color: black
+    }
+    .titulo-teclado{
+        height: 100px;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        border-bottom:dashed black 2px ;
+    }
+    .titulo-contenedor{
+        font-family: 'Crimson Pro', serif;
+        color: black;
+    }
+    .producto-1-teclado{
+        grid-area: prod1c;
+    }
+    .producto-2-teclado{
+        grid-area: prod2c;
+    }
+    .producto-3-teclado{
+        grid-area: prod3c;
+    }
+    .producto-4-teclado{
+        grid-area: prod4c;
+    }
+    .producto-5-teclado{
+        grid-area: prod5c;
+    }
+    .producto-6-teclado{
+        grid-area: prod6c;
+    }
+    .imagen-guitarra{
+        width: 100%;
+        height: 100%;
+        border-bottom: solid black 2px;
+    }
+    .producto-1-teclado, .producto-2-teclado, .producto-3-teclado, .producto-4-teclado, .producto-5-teclado, .producto-6-teclado{
+        height: 100%;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Crimson Pro', serif;
+        color: black;
+        border: solid 2px black;
+    }
+    .footer-conteiner{
+        display: grid;
+        grid-template-columns: 6.55% repeat(3, 29%) 6.55%;
+        grid-template-rows: 20%;
+        grid-template-areas:
+        ". sect1 sect2 sect3 ." 
+        ;
+        margin-top: 60px;
+        background-color: goldenrod;
+    }
+    .titulo-guitarra{
+        font-size: 15px;
+    }
+}
+@media(min-width:600px){
+    .body{
+        height: 100%;
+    }
+     .productos-teclado{
+        display: grid;
+        height: 100%;
+        margin-top: 70px;
+        grid-template-columns: 9% 21.45% 9% 21.45% 9% 21.45% 9%;
+        grid-template-rows: 47% 47% 47%;
+        grid-template-areas:
+        ". prod1c . prod2c . prod3c ."
+        ". prod4c . prod5c . prod6c ."
+        ;
+        row-gap: 50px;
+        height: 80%;
+        max-height: 80%;
+        justify-content: center;
+    }
+    .header-instrumentos-de-teclado{
+        height: 146px;
+        background-color: black
+    }
+    .titulo-teclado{
+        height: 100px;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        border-bottom:dashed black 2px ;
+    }
+    .titulo-contenedor{
+        font-family: 'Crimson Pro', serif;
+        color: black;
+    }
+    .producto-1-teclado{
+        grid-area: prod1c;
+    }
+    .producto-2-teclado{
+        grid-area: prod2c;
+    }
+    .producto-3-teclado{
+        grid-area: prod3c;
+    }
+    .producto-4-teclado{
+        grid-area: prod4c;
+    }
+    .producto-5-teclado{
+        grid-area: prod5c;
+    }
+    .producto-6-teclado{
+        grid-area: prod6c;
+    }
+    .imagen-guitarra{
+        width: 100%;
+        height: 100%;
+        border-bottom: solid black 2px;
+    }
+    .producto-1-teclado, .producto-2-teclado, .producto-3-teclado, .producto-4-teclado, .producto-5-teclado, .producto-6-teclado{
+        height: 100%;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Crimson Pro', serif;
+        color: black;
+        border: solid 2px black;
+    }
+    .footer-conteiner{
+        display: grid;
+        grid-template-columns: 6.55% repeat(3, 29%) 6.55%;
+        grid-template-rows: 20%;
+        grid-template-areas:
+        ". sect1 sect2 sect3 ." 
+        ;
+        margin-top: 40px;
+        background-color: goldenrod;
+    }
+    .titulo-guitarra{
+        font-size: 20px;
+    }
+}
+@media(min-width:1042px){
+    .body{
+        width: 100%;
+        height: 100%;
+    }
+    .header-instrumentos-de-teclado{
+        height: 146px;
+        background-color: black
+    }
+    .titulo-teclado{
+        height: 100px;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        border-bottom:dashed black 2px ;
+    }
+    .titulo-contenedor{
+        font-family: 'Crimson Pro', serif;
+        color: black;
+    }
+    .productos-teclado{
+        display: grid;
+        margin-top: 70px;
+        grid-template-columns: 9% 21.45% 9% 21.45% 9% 21.45% 9%;
+        grid-template-rows: 47% 47%;
+        grid-template-areas:
+        ". prod1c . prod2c . prod3c ."
+        ". prod4c . prod5c . prod6c ."
+        ;
+        row-gap: 50px;
+        height: 80%;
+        max-height: 80%;
+    }
+    .producto-1-teclado{
+        grid-area: prod1c;
+    }
+    .producto-2-teclado{
+        grid-area: prod2c;
+    }
+    .producto-3-teclado{
+        grid-area: prod3c;
+    }
+    .producto-4-teclado{
+        grid-area: prod4c;
+    }
+    .producto-5-teclado{
+        grid-area: prod5c;
+    }
+    .producto-6-teclado{
+        grid-area: prod6c;
+    }
+    .imagen-guitarra{
+        width: 100%;
+        height: 100%;
+        border-bottom: solid black 2px;
+    }
+    .producto-1-teclado, .producto-2-teclado, .producto-3-teclado, .producto-4-teclado, .producto-5-teclado, .producto-6-teclado{
+        height: 100%;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Crimson Pro', serif;
+        color: black;
+        border: solid 2px black;
+    }
+    .footer-conteiner{
+        display: grid;
+        grid-template-columns: 6.55% repeat(3, 29%) 6.55%;
+        grid-template-rows: 20%;
+        grid-template-areas:
+        ". sect1 sect2 sect3 ." 
+        ;
+        margin-top: 40px;
+        background-color: goldenrod;
+    }
+    .titulo-guitarra{
+        font-size: 30px;
+    }
+}
