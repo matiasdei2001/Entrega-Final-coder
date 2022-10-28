@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap');
-@import "cuerda","teclado";
+@import "cuerda","teclado","viento";
 
 *{
     padding: 0;
@@ -28,14 +28,18 @@ body{
     justify-content: space-around;
 }
 .logo{
-    background-color: antiquewhite;
     height: 75px;
     width: 75px;
+}
+.imagen-logo{
+    height: 100%;
+    width: 100%;
 }
 .navegador{
     width: 100%;
     display: flex;
     justify-content: center;
+    padding: 10px 0 10px 0;
 }
 .contenedor-links{
     display: flex;
@@ -46,6 +50,7 @@ body{
     width: 100%;
     height: 124px;
     list-style: none;
+    padding-left: 0px;
     
     font-family: 'Crimson Pro', serif;
 }
@@ -77,6 +82,13 @@ body{
     font-size: 20px;
     transition: 0.5s;
 }
+.link-5 a {
+    text-decoration: none;
+    list-style: none;
+    color: azure;
+    font-size: 20px;
+    transition: 0.5s;
+  }
 .link-1 a:hover{
     color: goldenrod;
 }
@@ -89,12 +101,16 @@ body{
 .link-4 a:hover{
     color: goldenrod;
 }
+.link-5 a:hover{
+    color: goldenrod;
+}
 .keyboard-1, .keyboard-2, .keyboard-3{
     display: none;
 }
 .section1{
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     margin: 20px 20px 0 20px;
 }
@@ -107,6 +123,7 @@ body{
     max-width: 900px;
     max-height: 400px;
     border: solid 3.5px goldenrod;
+    margin-top: 20px;
 }
 .footer-conteiner{
     display: grid;
@@ -115,13 +132,25 @@ body{
     grid-template-areas:
     ". sect1 sect2 sect3 ." 
     ;
-    margin-top: 20px;
+    margin-top: 70px;
     background-color: goldenrod;
 }
 .links-ul{
     list-style-type: none;
     justify-self: center;
     padding-left: 0;
+}
+.instagram-icon{
+    height: 20px;
+    width: auto;
+}
+.twitter-icon{
+    height: 20px;
+    width: auto;
+}
+.facebook-icon{
+    height: 20px;
+    width: auto;
 }
 .footer-cont-1{
     grid-area: sect1;
@@ -150,19 +179,47 @@ body{
     font-size: 15px;
     font-family: 'Crimson Pro', serif;
 }
-.link-1-foot a, .link-2-foot a, .link-3-foot a, .link-4-foot a{
+.link-1-foot a, .link-2-foot a, .link-3-foot a, .link-4-foot a, .link-5-foot a{
     list-style-type: none;
     text-decoration: none;
     color: black;
     font-family: 'Crimson Pro', serif;
     font-size: 10px;
 }
-.link-1-foot, .link-2-foot, .link-3-foot, .link-4-foot{
+.link-1-foot, .link-2-foot, .link-3-foot, .link-4-foot, .link-5-foot a{
     display: flex;
     flex-direction: column;
     
 }
-
+/*CSS para Quienes somos*/
+.titulo-quienes-somos{
+    height: 100px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-bottom:dashed black 2px ;
+}
+.conteiner-texto-quienes-somos{
+    padding: 30px 10px 10px 30px;
+  }
+.texto-quienes-somos{
+    font-family: "Crimson Pro", serif;
+    font-size: 20px;
+}
+.position-guitarra-img{
+    max-width: 100%;
+}
+.imagen-q-s{
+    height: 150px;
+    width: auto;
+  }
+  .position-guitarra-img{
+    display: flex;
+    justify-content:center;
+    padding: 50px 0 0 0;
+  }
 @media(min-width:600px){
 
     .header-index{
@@ -189,9 +246,8 @@ body{
         justify-content: space-around;
     }
     .logo{
-        background-color: antiquewhite;
-        height: 75px;
-        width: 75px;
+        height: 0px;
+        width: 0px;
     }
     .navegador{
         width: 100%;
@@ -207,52 +263,13 @@ body{
         
         font-family: 'Crimson Pro', serif;
     }
-    .link-1 a{
-        text-decoration: none;
-        list-style: none;
-        color: azure;
-        font-size: 20px;
-        transition: 0.5s;
-    }
-    .link-2 a{
-        text-decoration: none;
-        list-style: none;
-        color: azure;
-        font-size: 20px;
-        transition: 0.5s;
-    }
-    .link-3 a{
-        text-decoration: none;
-        list-style: none;
-        color: azure;
-        font-size: 20px;
-        transition: 0.5s;
-    }
-    .link-4 a{
-        text-decoration: none;
-        list-style: none;
-        color: azure;
-        font-size: 20px;
-        transition: 0.5s;
-    }
-    .link-1 a:hover{
-        color: goldenrod;
-    }
-    .link-2 a:hover{
-        color: goldenrod;
-    }
-    .link-3 a:hover{
-        color: goldenrod;
-    }
-    .link-4 a:hover{
-        color: goldenrod;
-    }
     .keyboard-1, .keyboard-2, .keyboard-3{
         display: none;
     }
     .section1{
         display: flex;
         justify-content: center;
+        flex-direction: row;
         align-items: center;
         margin: 20px 20px 0 20px;
     }
@@ -274,13 +291,25 @@ body{
         grid-template-areas:
         ". sect1 sect2 sect3 ." 
         ;
-        margin-top: 20px;
+        margin-top: 60px;
         background-color: goldenrod;
     }
     .links-ul{
         list-style-type: none;
         justify-self: center;
         padding-left: 0;
+    }
+    .instagram-icon{
+        height: 25px;
+        width: auto;
+    }
+    .twitter-icon{
+        height: 25px;
+        width: auto;
+    }
+    .facebook-icon{
+        height: 25px;
+        width: auto;
     }
     .footer-cont-1{
         grid-area: sect1;
@@ -309,12 +338,20 @@ body{
         font-size: 25px;
         font-family: 'Crimson Pro', serif;
     }
-    .link-1-foot a, .link-2-foot a, .link-3-foot a, .link-4-foot a{
+    .link-1-foot a, .link-2-foot a, .link-3-foot a, .link-4-foot a, .link-5-foot a{
         list-style-type: none;
         text-decoration: none;
         color: black;
         font-family: 'Crimson Pro', serif;
         font-size: 20px;
+    }
+    .imagen-q-s{
+        height: 250px;
+        width: auto;
+      }
+      .texto-quienes-somos{
+        font-family: "Crimson Pro", serif;
+        font-size: 30px;
     }
 }
 
@@ -342,12 +379,11 @@ body{
         justify-content: space-around;
     }
     .logo{
-        background-color: antiquewhite;
         height: 100px;
         width: 100px;
     }
     .navegador{
-        width: 75%;
+        width: 85%;
     }
     .contenedor-links{
         display: flex;
@@ -358,54 +394,15 @@ body{
         font-family: 'Crimson Pro', serif;
         list-style: none;
     }
-    .link-1 a{
-        text-decoration: none;
-        list-style: none;
-        color: azure;
-        font-size: 20px;
-        transition: 0.5s;
-    }
-    .link-2 a{
-        text-decoration: none;
-        list-style: none;
-        color: azure;
-        font-size: 20px;
-        transition: 0.5s;
-    }
-    .link-3 a{
-        text-decoration: none;
-        list-style: none;
-        color: azure;
-        font-size: 20px;
-        transition: 0.5s;
-    }
-    .link-4 a{
-        text-decoration: none;
-        list-style: none;
-        color: azure;
-        font-size: 20px;
-        transition: 0.5s;
-    }
-    .link-1 a:hover{
-        color: goldenrod;
-    }
-    .link-2 a:hover{
-        color: goldenrod;
-    }
-    .link-3 a:hover{
-        color: goldenrod;
-    }
-    .link-4 a:hover{
-        color: goldenrod;
-    }
     .keyboard-1, .keyboard-2, .keyboard-3{
         display: none;
     }
     .section1{
         display: flex;
         justify-content: center;
+        flex-direction: row;
         align-items: center;
-        margin: 20px 20px 0 20px;
+        margin: 20px 20px 20px 20px;
     }
     .titulo-1{
         font-size: 30px;
@@ -424,13 +421,25 @@ body{
         grid-template-areas:
         ". sect1 sect2 sect3 ." 
         ;
-        margin-top: 20px;
+        margin-top: 40px;
         background-color: goldenrod;
     }
     .links-ul{
         list-style-type: none;
         justify-self: center;
         padding-left: 0;
+    }
+    .instagram-icon{
+        height: 30px;
+        width: auto;
+    }
+    .twitter-icon{
+        height: 30px;
+        width: auto;
+    }
+    .facebook-icon{
+        height: 30px;
+        width: auto;
     }
     .footer-cont-1{
         grid-area: sect1;
@@ -459,12 +468,20 @@ body{
         font-size: 25px;
         font-family: 'Crimson Pro', serif;
     }
-    .link-1-foot a, .link-2-foot a, .link-3-foot a, .link-4-foot a{
+    .link-1-foot a, .link-2-foot a, .link-3-foot a, .link-4-foot a, .link-5-foot a{
         list-style-type: none;
         text-decoration: none;
         color: black;
         font-family: 'Crimson Pro', serif;
         font-size: 20px;
+    }
+    .imagen-q-s{
+        height: 300px;
+        width: auto;
+      }
+      .texto-quienes-somos{
+        font-family: "Crimson Pro", serif;
+        font-size: 40px;
     }
 }
 
@@ -601,12 +618,11 @@ body{
         justify-content: space-around;
     }
     .logo{
-        background-color: antiquewhite;
         height: 100px;
         width: 100px;
     }
     .navegador{
-        width: 75%;
+        width: 85%;
     }
     .contenedor-links{
         display: flex;
@@ -619,14 +635,14 @@ body{
         margin: 0;
     }
 
-    .link-1 a, .link-2 a, .link-3 a, .link-4 a{
+    .link-1 a, .link-2 a, .link-3 a, .link-4 a, .link-5 a{
         text-decoration: none;
         list-style: none;
         color: azure;
         font-size: 25px;
         transition: 0.5s;
     }
-    .link-1 a:hover, .link-2 a:hover, .link-3 a:hover, .link-4 a:hover{
+    .link-1 a:hover, .link-2 a:hover, .link-3 a:hover, .link-4 a:hover, .link-5 a:hover{
         color: goldenrod;
     }
     .keyboard-1, .keyboard-2, .keyboard-3 {
@@ -642,6 +658,7 @@ body{
 .section1{
     display: flex;
     justify-content: center;
+    flex-direction: row; 
     align-items: center;
     margin: 20px 20px 0 20px;
 }
@@ -662,7 +679,7 @@ body{
     grid-template-areas:
     ". sect1 sect2 sect3 ." 
     ;
-    margin-top: 20px;
+    margin-top: 60px;
     background-color: goldenrod;
 }
 .links-ul{
@@ -688,6 +705,20 @@ body{
     font-size: 25px;
     font-family: 'Crimson Pro', serif;
 }
+
+.instagram-icon{
+    height: 30px;
+    width: auto;
+}
+.twitter-icon{
+    height: 30px;
+    width: auto;
+}
+.facebook-icon{
+    height: 30px;
+    width: auto;
+}
+
 .footer-cont-3{
     grid-area: sect3;
     justify-self: center;
@@ -697,15 +728,21 @@ body{
     font-size: 25px;
     font-family: 'Crimson Pro', serif;
 }
-.link-1-foot a, .link-2-foot a, .link-3-foot a, .link-4-foot a{
+.link-1-foot a, .link-2-foot a, .link-3-foot a, .link-4-foot a, .link-5-foot a{
     list-style-type: none;
     text-decoration: none;
     color: black;
     font-family: 'Crimson Pro', serif;
     font-size: 20px;
 }
+.imagen-q-s{
+    height: 400px;
+    width: auto;
+  }
+  .texto-quienes-somos{
+    font-family: "Crimson Pro", serif;
+    font-size: 40px;
+}
 }
 
-
-
-
+  

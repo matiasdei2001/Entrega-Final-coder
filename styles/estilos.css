@@ -462,6 +462,238 @@
     font-size: 30px;
   }
 }
+/* CSS Para instrumentos de teclado*/
+@media (min-width: 300px) {
+  .productos-instrumentos-de-viento {
+    display: grid;
+    justify-content: center;
+    margin-top: 50px;
+    grid-template-columns: 9% 40% 9% 40% 9%;
+    grid-template-rows: 30% 30% 30%;
+    grid-template-areas: ". prod1c . prod2c ." ". prod3c . prod4c ." ". prod5c . prod6c .";
+    row-gap: 50px;
+    height: 80%;
+    max-height: 80%;
+  }
+  .header-instrumentos-de-viento {
+    background-color: black;
+  }
+  .titulo-instrumentos-de-viento {
+    height: 100px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-bottom: dashed black 2px;
+  }
+  .titulo-contenedor {
+    font-family: "Crimson Pro", serif;
+    color: black;
+  }
+  .producto-1-instrumentos-de-viento {
+    grid-area: prod1c;
+  }
+  .producto-2-instrumentos-de-viento {
+    grid-area: prod2c;
+  }
+  .producto-3-instrumentos-de-viento {
+    grid-area: prod3c;
+  }
+  .producto-4-instrumentos-de-viento {
+    grid-area: prod4c;
+  }
+  .producto-5-instrumentos-de-viento {
+    grid-area: prod5c;
+  }
+  .producto-6-instrumentos-de-viento {
+    grid-area: prod6c;
+  }
+  .imagen-instrumentos-de-viento {
+    width: 100%;
+    height: 100%;
+    border-bottom: solid black 2px;
+  }
+  .producto-1-instrumentos-de-viento, .producto-2-instrumentos-de-viento, .producto-3-instrumentos-de-viento, .producto-4-instrumentos-de-viento, .producto-5-instrumentos-de-viento, .producto-6-instrumentos-de-viento {
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Crimson Pro", serif;
+    color: black;
+    border: solid 2px black;
+  }
+  .footer-conteiner {
+    display: grid;
+    grid-template-columns: 6.55% repeat(3, 29%) 6.55%;
+    grid-template-rows: 20%;
+    grid-template-areas: ". sect1 sect2 sect3 .";
+    margin-top: 60px;
+    background-color: goldenrod;
+  }
+  .titulo-guitarra {
+    font-size: 15px;
+  }
+}
+@media (min-width: 600px) {
+  .body {
+    height: 100%;
+  }
+  .productos-instrumentos-de-viento {
+    display: grid;
+    height: 100%;
+    margin-top: 70px;
+    grid-template-columns: 9% 21.45% 9% 21.45% 9% 21.45% 9%;
+    grid-template-rows: 47% 47% 47%;
+    grid-template-areas: ". prod1c . prod2c . prod3c ." ". prod4c . prod5c . prod6c .";
+    row-gap: 50px;
+    height: 80%;
+    max-height: 80%;
+    justify-content: center;
+  }
+  .header-instrumentos-de-viento {
+    height: 146px;
+    background-color: black;
+  }
+  .titulo-instrumentos-de-viento {
+    height: 100px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    border-bottom: dashed black 2px;
+  }
+  .titulo-contenedor {
+    font-family: "Crimson Pro", serif;
+    color: black;
+  }
+  .producto-1-instrumentos-de-viento {
+    grid-area: prod1c;
+  }
+  .producto-2-instrumentos-de-viento {
+    grid-area: prod2c;
+  }
+  .producto-3-instrumentos-de-viento {
+    grid-area: prod3c;
+  }
+  .producto-4-instrumentos-de-viento {
+    grid-area: prod4c;
+  }
+  .producto-5-instrumentos-de-viento {
+    grid-area: prod5c;
+  }
+  .producto-6-instrumentos-de-viento {
+    grid-area: prod6c;
+  }
+  .imagen-instrumentos-de-viento {
+    width: 100%;
+    height: 100%;
+    border-bottom: solid black 2px;
+  }
+  .producto-1-instrumentos-de-viento, .producto-2-instrumentos-de-viento, .producto-3-instrumentos-de-viento, .producto-4-instrumentos-de-viento, .producto-5-instrumentos-de-viento, .producto-6-instrumentos-de-viento {
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Crimson Pro", serif;
+    color: black;
+    border: solid 2px black;
+  }
+  .footer-conteiner {
+    display: grid;
+    grid-template-columns: 6.55% repeat(3, 29%) 6.55%;
+    grid-template-rows: 20%;
+    grid-template-areas: ". sect1 sect2 sect3 .";
+    margin-top: 40px;
+    background-color: goldenrod;
+  }
+  .titulo-guitarra {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1042px) {
+  .body {
+    width: 100%;
+    height: 100%;
+  }
+  .header-instrumentos-de-viento {
+    height: 146px;
+    background-color: black;
+  }
+  .titulo-instrumentos-de-viento {
+    height: 100px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    border-bottom: dashed black 2px;
+  }
+  .titulo-contenedor {
+    font-family: "Crimson Pro", serif;
+    color: black;
+  }
+  .productos-instrumentos-de-viento {
+    display: grid;
+    margin-top: 70px;
+    grid-template-columns: 9% 21.45% 9% 21.45% 9% 21.45% 9%;
+    grid-template-rows: 47% 47%;
+    grid-template-areas: ". prod1c . prod2c . prod3c ." ". prod4c . prod5c . prod6c .";
+    row-gap: 50px;
+    height: 80%;
+    max-height: 80%;
+  }
+  .producto-1-instrumentos-de-viento {
+    grid-area: prod1c;
+  }
+  .producto-2-instrumentos-de-viento {
+    grid-area: prod2c;
+  }
+  .producto-3-instrumentos-de-viento {
+    grid-area: prod3c;
+  }
+  .producto-4-instrumentos-de-viento {
+    grid-area: prod4c;
+  }
+  .producto-5-instrumentos-de-viento {
+    grid-area: prod5c;
+  }
+  .producto-6-instrumentos-de-viento {
+    grid-area: prod6c;
+  }
+  .imagen-instrumentos-de-viento {
+    width: 100%;
+    height: 100%;
+    border-bottom: solid black 2px;
+  }
+  .producto-1-instrumentos-de-viento, .producto-2-instrumentos-de-viento, .producto-3-instrumentos-de-viento, .producto-4-instrumentos-de-viento, .producto-5-instrumentos-de-viento, .producto-6-instrumentos-de-viento {
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Crimson Pro", serif;
+    color: black;
+    border: solid 2px black;
+  }
+  .footer-conteiner {
+    display: grid;
+    grid-template-columns: 6.55% repeat(3, 29%) 6.55%;
+    grid-template-rows: 20%;
+    grid-template-areas: ". sect1 sect2 sect3 .";
+    margin-top: 40px;
+    background-color: goldenrod;
+  }
+  .titulo-guitarra {
+    font-size: 30px;
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -492,15 +724,20 @@ body {
 }
 
 .logo {
-  background-color: antiquewhite;
   height: 75px;
   width: 75px;
+}
+
+.imagen-logo {
+  height: 100%;
+  width: 100%;
 }
 
 .navegador {
   width: 100%;
   display: flex;
   justify-content: center;
+  padding: 10px 0 10px 0;
 }
 
 .contenedor-links {
@@ -512,6 +749,7 @@ body {
   width: 100%;
   height: 124px;
   list-style: none;
+  padding-left: 0px;
   font-family: "Crimson Pro", serif;
 }
 
@@ -547,6 +785,14 @@ body {
   transition: 0.5s;
 }
 
+.link-5 a {
+  text-decoration: none;
+  list-style: none;
+  color: azure;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
 .link-1 a:hover {
   color: goldenrod;
 }
@@ -563,6 +809,10 @@ body {
   color: goldenrod;
 }
 
+.link-5 a:hover {
+  color: goldenrod;
+}
+
 .keyboard-1, .keyboard-2, .keyboard-3 {
   display: none;
 }
@@ -570,6 +820,7 @@ body {
 .section1 {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   margin: 20px 20px 0 20px;
 }
@@ -585,6 +836,7 @@ body {
   max-width: 900px;
   max-height: 400px;
   border: solid 3.5px goldenrod;
+  margin-top: 20px;
 }
 
 .footer-conteiner {
@@ -592,7 +844,7 @@ body {
   grid-template-columns: 6.55% repeat(3, 29%) 6.55%;
   grid-template-rows: 20%;
   grid-template-areas: ". sect1 sect2 sect3 .";
-  margin-top: 20px;
+  margin-top: 70px;
   background-color: goldenrod;
 }
 
@@ -600,6 +852,21 @@ body {
   list-style-type: none;
   justify-self: center;
   padding-left: 0;
+}
+
+.instagram-icon {
+  height: 20px;
+  width: auto;
+}
+
+.twitter-icon {
+  height: 20px;
+  width: auto;
+}
+
+.facebook-icon {
+  height: 20px;
+  width: auto;
 }
 
 .footer-cont-1 {
@@ -635,7 +902,7 @@ body {
   font-family: "Crimson Pro", serif;
 }
 
-.link-1-foot a, .link-2-foot a, .link-3-foot a, .link-4-foot a {
+.link-1-foot a, .link-2-foot a, .link-3-foot a, .link-4-foot a, .link-5-foot a {
   list-style-type: none;
   text-decoration: none;
   color: black;
@@ -643,9 +910,44 @@ body {
   font-size: 10px;
 }
 
-.link-1-foot, .link-2-foot, .link-3-foot, .link-4-foot {
+.link-1-foot, .link-2-foot, .link-3-foot, .link-4-foot, .link-5-foot a {
   display: flex;
   flex-direction: column;
+}
+
+/*CSS para Quienes somos*/
+.titulo-quienes-somos {
+  height: 100px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  border-bottom: dashed black 2px;
+}
+
+.conteiner-texto-quienes-somos {
+  padding: 30px 10px 10px 30px;
+}
+
+.texto-quienes-somos {
+  font-family: "Crimson Pro", serif;
+  font-size: 20px;
+}
+
+.position-guitarra-img {
+  max-width: 100%;
+}
+
+.imagen-q-s {
+  height: 150px;
+  width: auto;
+}
+
+.position-guitarra-img {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0 0 0;
 }
 
 @media (min-width: 600px) {
@@ -672,9 +974,8 @@ body {
     justify-content: space-around;
   }
   .logo {
-    background-color: antiquewhite;
-    height: 75px;
-    width: 75px;
+    height: 0px;
+    width: 0px;
   }
   .navegador {
     width: 100%;
@@ -689,52 +990,13 @@ body {
     list-style: none;
     font-family: "Crimson Pro", serif;
   }
-  .link-1 a {
-    text-decoration: none;
-    list-style: none;
-    color: azure;
-    font-size: 20px;
-    transition: 0.5s;
-  }
-  .link-2 a {
-    text-decoration: none;
-    list-style: none;
-    color: azure;
-    font-size: 20px;
-    transition: 0.5s;
-  }
-  .link-3 a {
-    text-decoration: none;
-    list-style: none;
-    color: azure;
-    font-size: 20px;
-    transition: 0.5s;
-  }
-  .link-4 a {
-    text-decoration: none;
-    list-style: none;
-    color: azure;
-    font-size: 20px;
-    transition: 0.5s;
-  }
-  .link-1 a:hover {
-    color: goldenrod;
-  }
-  .link-2 a:hover {
-    color: goldenrod;
-  }
-  .link-3 a:hover {
-    color: goldenrod;
-  }
-  .link-4 a:hover {
-    color: goldenrod;
-  }
   .keyboard-1, .keyboard-2, .keyboard-3 {
     display: none;
   }
   .section1 {
     display: flex;
     justify-content: center;
+    flex-direction: row;
     align-items: center;
     margin: 20px 20px 0 20px;
   }
@@ -754,13 +1016,25 @@ body {
     grid-template-columns: 6.55% repeat(3, 29%) 6.55%;
     grid-template-rows: 20%;
     grid-template-areas: ". sect1 sect2 sect3 .";
-    margin-top: 20px;
+    margin-top: 60px;
     background-color: goldenrod;
   }
   .links-ul {
     list-style-type: none;
     justify-self: center;
     padding-left: 0;
+  }
+  .instagram-icon {
+    height: 25px;
+    width: auto;
+  }
+  .twitter-icon {
+    height: 25px;
+    width: auto;
+  }
+  .facebook-icon {
+    height: 25px;
+    width: auto;
   }
   .footer-cont-1 {
     grid-area: sect1;
@@ -789,12 +1063,20 @@ body {
     font-size: 25px;
     font-family: "Crimson Pro", serif;
   }
-  .link-1-foot a, .link-2-foot a, .link-3-foot a, .link-4-foot a {
+  .link-1-foot a, .link-2-foot a, .link-3-foot a, .link-4-foot a, .link-5-foot a {
     list-style-type: none;
     text-decoration: none;
     color: black;
     font-family: "Crimson Pro", serif;
     font-size: 20px;
+  }
+  .imagen-q-s {
+    height: 250px;
+    width: auto;
+  }
+  .texto-quienes-somos {
+    font-family: "Crimson Pro", serif;
+    font-size: 30px;
   }
 }
 @media (min-width: 800px) {
@@ -818,12 +1100,11 @@ body {
     justify-content: space-around;
   }
   .logo {
-    background-color: antiquewhite;
     height: 100px;
     width: 100px;
   }
   .navegador {
-    width: 75%;
+    width: 85%;
   }
   .contenedor-links {
     display: flex;
@@ -834,54 +1115,15 @@ body {
     font-family: "Crimson Pro", serif;
     list-style: none;
   }
-  .link-1 a {
-    text-decoration: none;
-    list-style: none;
-    color: azure;
-    font-size: 20px;
-    transition: 0.5s;
-  }
-  .link-2 a {
-    text-decoration: none;
-    list-style: none;
-    color: azure;
-    font-size: 20px;
-    transition: 0.5s;
-  }
-  .link-3 a {
-    text-decoration: none;
-    list-style: none;
-    color: azure;
-    font-size: 20px;
-    transition: 0.5s;
-  }
-  .link-4 a {
-    text-decoration: none;
-    list-style: none;
-    color: azure;
-    font-size: 20px;
-    transition: 0.5s;
-  }
-  .link-1 a:hover {
-    color: goldenrod;
-  }
-  .link-2 a:hover {
-    color: goldenrod;
-  }
-  .link-3 a:hover {
-    color: goldenrod;
-  }
-  .link-4 a:hover {
-    color: goldenrod;
-  }
   .keyboard-1, .keyboard-2, .keyboard-3 {
     display: none;
   }
   .section1 {
     display: flex;
     justify-content: center;
+    flex-direction: row;
     align-items: center;
-    margin: 20px 20px 0 20px;
+    margin: 20px 20px 20px 20px;
   }
   .titulo-1 {
     font-size: 30px;
@@ -899,13 +1141,25 @@ body {
     grid-template-columns: 6.55% repeat(3, 29%) 6.55%;
     grid-template-rows: 20%;
     grid-template-areas: ". sect1 sect2 sect3 .";
-    margin-top: 20px;
+    margin-top: 40px;
     background-color: goldenrod;
   }
   .links-ul {
     list-style-type: none;
     justify-self: center;
     padding-left: 0;
+  }
+  .instagram-icon {
+    height: 30px;
+    width: auto;
+  }
+  .twitter-icon {
+    height: 30px;
+    width: auto;
+  }
+  .facebook-icon {
+    height: 30px;
+    width: auto;
   }
   .footer-cont-1 {
     grid-area: sect1;
@@ -934,12 +1188,20 @@ body {
     font-size: 25px;
     font-family: "Crimson Pro", serif;
   }
-  .link-1-foot a, .link-2-foot a, .link-3-foot a, .link-4-foot a {
+  .link-1-foot a, .link-2-foot a, .link-3-foot a, .link-4-foot a, .link-5-foot a {
     list-style-type: none;
     text-decoration: none;
     color: black;
     font-family: "Crimson Pro", serif;
     font-size: 20px;
+  }
+  .imagen-q-s {
+    height: 300px;
+    width: auto;
+  }
+  .texto-quienes-somos {
+    font-family: "Crimson Pro", serif;
+    font-size: 40px;
   }
 }
 @media (min-width: 1042px) {
@@ -1073,12 +1335,11 @@ body {
     justify-content: space-around;
   }
   .logo {
-    background-color: antiquewhite;
     height: 100px;
     width: 100px;
   }
   .navegador {
-    width: 75%;
+    width: 85%;
   }
   .contenedor-links {
     display: flex;
@@ -1090,14 +1351,14 @@ body {
     list-style: none;
     margin: 0;
   }
-  .link-1 a, .link-2 a, .link-3 a, .link-4 a {
+  .link-1 a, .link-2 a, .link-3 a, .link-4 a, .link-5 a {
     text-decoration: none;
     list-style: none;
     color: azure;
     font-size: 25px;
     transition: 0.5s;
   }
-  .link-1 a:hover, .link-2 a:hover, .link-3 a:hover, .link-4 a:hover {
+  .link-1 a:hover, .link-2 a:hover, .link-3 a:hover, .link-4 a:hover, .link-5 a:hover {
     color: goldenrod;
   }
   .keyboard-1, .keyboard-2, .keyboard-3 {
@@ -1111,6 +1372,7 @@ body {
   .section1 {
     display: flex;
     justify-content: center;
+    flex-direction: row;
     align-items: center;
     margin: 20px 20px 0 20px;
   }
@@ -1130,7 +1392,7 @@ body {
     grid-template-columns: 6.55% repeat(3, 29%) 6.55%;
     grid-template-rows: 20%;
     grid-template-areas: ". sect1 sect2 sect3 .";
-    margin-top: 20px;
+    margin-top: 60px;
     background-color: goldenrod;
   }
   .links-ul {
@@ -1156,6 +1418,18 @@ body {
     font-size: 25px;
     font-family: "Crimson Pro", serif;
   }
+  .instagram-icon {
+    height: 30px;
+    width: auto;
+  }
+  .twitter-icon {
+    height: 30px;
+    width: auto;
+  }
+  .facebook-icon {
+    height: 30px;
+    width: auto;
+  }
   .footer-cont-3 {
     grid-area: sect3;
     justify-self: center;
@@ -1165,11 +1439,19 @@ body {
     font-size: 25px;
     font-family: "Crimson Pro", serif;
   }
-  .link-1-foot a, .link-2-foot a, .link-3-foot a, .link-4-foot a {
+  .link-1-foot a, .link-2-foot a, .link-3-foot a, .link-4-foot a, .link-5-foot a {
     list-style-type: none;
     text-decoration: none;
     color: black;
     font-family: "Crimson Pro", serif;
     font-size: 20px;
+  }
+  .imagen-q-s {
+    height: 400px;
+    width: auto;
+  }
+  .texto-quienes-somos {
+    font-family: "Crimson Pro", serif;
+    font-size: 40px;
   }
 }/*# sourceMappingURL=estilos.css.map */
